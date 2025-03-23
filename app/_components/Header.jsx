@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+//import { Button } from '@/components/ui/button';
 
 function Header() {
   return (
@@ -11,7 +11,7 @@ function Header() {
         width={100}
         height={100}
       />
-      <Button>Get Started </Button>
+      {/* <Button>Get Started </Button> */}
     </div>
   );
 }
