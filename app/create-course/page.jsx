@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { TbStack3 } from "react-icons/tb";
 import { Button } from "../../components/ui/button";
 import SelectCategory from "./_components/SelectCategory";
+import TopicDescription from "./_components/TopicDescription";
+import SelectOption from "./_components/SelectOption";
 
 function CreateCourse() {
   const StepperOptions = [
@@ -59,7 +61,7 @@ function CreateCourse() {
 
       <div></div>
       {/* Component */}
-      {activeIndex === 0?<SelectCategory />:null}
+      {activeIndex === 0?<SelectCategory />:activeIndex==1?<TopicDescription/>:<SelectOption/>}
 
       {/* BUtton  */}
 
